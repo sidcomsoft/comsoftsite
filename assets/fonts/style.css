@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'centurygothic_bold';
+   font-display: swap;
+   src: url('centurygothic_bold/font.ttf');
+}
+@font-face {
+   font-family: 'centurygothic';
+   font-display: swap;
+   src: url('centurygothic/font.ttf');
+}
