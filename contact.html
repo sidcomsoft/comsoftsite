@@ -23,7 +23,31 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=MyLYPn"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=MyLYPn" type="text/css">
+ <style>
+.error-span {
+  display: block !important;
+  background: none;
+  color: #cd1443 !important;
+  font: 400 13px "Open Sans";
+  font-style: italic;
+  top: 0;
+  margin: 5px 0 0 0;
+  height: auto;
+  clear: left; }
 
+  .error-success {
+  display: block !important;
+  background: none;
+  color: #0f8c69;
+  font: 400 13px "Open Sans";
+  font-style: italic;
+  top: 0;
+  margin: 5px 0 0 0;
+  height: auto;
+  clear: left; }
+
+
+  </style>
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script>
 
@@ -86,7 +110,7 @@ function submitForm(){
 	
 		
 		 var url="name="+name +"&email="+email+"&content="+content+"&company="+company;
-		//console.log("url=="+url);
+	   console.log("url=="+url);
 
 		sendInfo(url);
 
@@ -274,12 +298,13 @@ function validations(){
                                     <input type="company" name="company" id="company" placeholder="Company" data-form-field="company" class="form-control display-7" value="" id="company-form01-19"><label id="txtCompanyErr" for="txtCompanyErr" style="display:none;" class="error-span"></label> 
                                 </div>
                                 <div data-for="textarea" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3 mb-3 mb-3">
-                                <textarea name="textarea" name="content" id="content" placeholder="Message" data-form-field="textarea" class="form-control display-7" id="textarea-form01-19"></textarea><label id="errContent" for="errContent" style="display:none;" class="error-span"></label> 
+                                <textarea  name="content" id="content" placeholder="Message" data-form-field="textarea" class="form-control display-7" id="textarea-form01-19"></textarea><label id="errContent" for="errContent" style="display:none;" class="error-span"></label> 
                                 </div>
+
+								 
 								 <div data-for="status" class="col-lg-12 form-group">
 							<div id="mail-status"></div>
-							 <div id="loader-icon" style="display:none;">
-						 <img src="img/loader.gif" /></div> 
+							 
 						</div>
 						 
 						
@@ -432,7 +457,7 @@ function validations(){
     </div>
 
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/ytplayer/index.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
